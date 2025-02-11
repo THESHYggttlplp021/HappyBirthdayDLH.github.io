@@ -10,7 +10,7 @@
 </head>
 
 <body class="bg">
-  <audio loop src="../music/hi,我是周杰伦.mp3" id="audio" autoplay preload="auto"></audio>
+  <audio loop src="../music/hi,我是周杰伦.mp3" id="myAduio"></audio>
   <div>
     <div class="velas">
       <div class="fuego"></div>
@@ -213,5 +213,10 @@
   <script src='../js/jquery.js'></script>
   
 </body>
-
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    var audio = document.getElementById('myAduio');
+    audio.play();
+  })
+</script>
 </html>
