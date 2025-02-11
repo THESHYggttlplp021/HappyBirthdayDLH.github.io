@@ -7,6 +7,14 @@
 
   <title>Happy Birthday</title>
   <link rel="stylesheet" href="../css/styless.css" media="screen" type="text/css" />
+  <style>
+    #notic{
+      margin-left:41%;
+      margin-top: 0%;
+      font-size: 25px;
+      color: white;
+    }
+  </style>
 </head>
 
 <body class="bg">
@@ -177,6 +185,7 @@
       <rect class="come" x="10" y="475.571" fill="#fefae9" width="180" height="4" />
     </svg>
   </div>
+  <p id="notic">单机任意位置开启音乐</p>
   <div class="happy">
     <img src="../img/HappyBirthday.png">
   </div>
@@ -214,8 +223,9 @@
   
 </body>
 <script>
-  document.addEventListener('DOMContentLoaded', function(){
+  document.addEventListener('click', function(){
     var audio = document.getElementById('myAduio');
+    document.getElementById('notic').style.display = "none";
     audio.play();
   })
 </script>
